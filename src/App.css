@@ -1,0 +1,105 @@
+body {
+  background-image: url("./images/cloud-bg2.png"), url("./images/cloud-bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+.header {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3rem;
+  font-weight: 1000;
+  text-shadow: 4px 4px whitesmoke;
+  color: #0e1f29;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+.chance {
+  height: 60vh;
+  width: 37vw;
+  box-shadow: grey 10px 10px 10px;
+  background-color: white;
+}
+.amount {
+  height: 60vh;
+  width: 37vw;
+  margin-left: 4%;
+  box-shadow: grey 10px 10px 10px;
+  background-color: white;
+}
+.range-chance {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputs {
+  height: 8vh;
+  width: 14vw;
+  box-shadow: grey 5px 5px 5px;
+}
+
+input {
+  width: 12vw;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #0e1e2b;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #a3c6e2;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #0e1e2b;
+}
+input[type="range"]::-ms-fill-upper {
+  background-color: #a3c6e2;
+}
+.name-input {
+  font-size: 17px;
+  font-family: cursive;
+  color: #0e1e2b;
+}
+@media screen and (max-width: 800px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  .chance {
+    margin-left: 6px;
+    height: 38vh;
+    width: 95vw;
+    box-shadow: grey 5px 5px 5px;
+    background-color: white;
+  }
+  .amount {
+    margin-left: 6px;
+    margin-top: 28%;
+    height: 46vh;
+    width: 95vw;
+    box-shadow: grey 5px 5px 5px;
+    background-color: white;
+  }
+  .input {
+    width: 140px;
+  }
+  .inputs {
+    height: 42px;
+    width: 142px;
+  }
+  .name-input {
+    width: 200px;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #0e1e2b;
+  }
+  .range-chance {
+    margin-top: 7.5%;
+  }
+}
