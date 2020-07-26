@@ -11,7 +11,7 @@ export default class App extends Component {
   };
   async componentDidMount() {
     const url =
-      "http://private-4945e-weather34.apiary-proxy.com/weather34/rain";
+      "https://private-4945e-weather34.apiary-proxy.com/weather34/rain";
     const reponse = await fetch(url);
     const data = await reponse.json();
     let items = data;
